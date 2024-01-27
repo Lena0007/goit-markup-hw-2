@@ -3,12 +3,47 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 a {
     text-decoration: none;
+
 }
 ul, ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*=======HEADER=====*/
+.header-container {
+    display: flex;
+}
+
+ .header {
+    border-bottom: 1px solid #E7E9FC;
+ }
+
 
 .logo {
     color: #4D5AE5;
@@ -18,6 +53,7 @@ ul, ol {
     line-height: 1.17; 
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .second-part-logo {
@@ -30,6 +66,18 @@ ul, ol {
     text-transform: uppercase;
 }
 
+.navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: start;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
 .nav-link {
     color: #2E2F42;
     font-family: Roboto, sans-serif;
@@ -37,6 +85,9 @@ ul, ol {
     font-weight: 500;
     line-height: 1.50;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 
 .nav-link:hover,
@@ -45,7 +96,15 @@ ul, ol {
 }
 
 .address {
+    display: flex;
     font-style: normal;
+    align-items: center;
+
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-link {
@@ -73,6 +132,10 @@ ul, ol {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 0;
+    width: 496px;
+    padding: 188px 272px 292px 272px;
+    margin-bottom: 48px;
 }
 .hero-btn {
     background-color: #4D5AE5;
@@ -82,7 +145,14 @@ ul, ol {
     font-weight: 500;
     line-height: 1.50;
     letter-spacing: 0.04em;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    padding: 16px 32px;
+    margin-top: 48px;
+    display: block;
+    
 }
 .hero-btn:hover {
     background-color: #404BBF;
@@ -96,11 +166,18 @@ ul, ol {
 
 .advantages {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.advantages-list {}
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
 
-.advantages-item {}
+.advantages-item {
+    width: calc((100% - 48px) / 4);
+}
 
 .advantages-subtitle {
     color: #2E2F42;
@@ -108,6 +185,8 @@ ul, ol {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+
 }
 
 .advantages-item-text {
@@ -124,19 +203,32 @@ ul, ol {
 }
 
 .team-title {
-    color: var(--NAVY-BLUE, #2E2F42);
+    color: #2E2F42;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
-        /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
 
 .team-item {
     background-color: #FFF;
+    padding-bottom: 120px;
+    border-radius: 0px 0px 4px 4px;
+    max-width: 264px;
+    max-height: 380px;
+    text-align: center;
+    margin-bottom: 120px;
+
 }
 
 .team-pictures {}
@@ -147,6 +239,8 @@ ul, ol {
     font-weight: 500;
     line-height: 1.20;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -154,6 +248,7 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 /* ==================== */
 
@@ -169,6 +264,10 @@ ul, ol {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-top: 120px;
+    margin: 0 auto;
+    width: 218px;
+    margin-bottom: 72px;
 }
 
 .portfolios-list {}
