@@ -168,6 +168,7 @@ img {
 
 .advantages {
     background: #FFF;
+    padding: 120px 0;
 }
 
 .visually-hidden {
@@ -185,7 +186,6 @@ img {
 .advantages-list {
     display: flex;
     gap: 24px;
-    padding: 120px 0;
 }
 
 .advantages-item {
